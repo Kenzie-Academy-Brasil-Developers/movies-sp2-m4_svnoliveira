@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS "orders" (
+ "id" SERIAL PRIMARY KEY,
+ "name" VARCHAR(50) NOT NULL,
+ "category" VARCHAR(20) NOT NULL,
+ "duration" INTEGER NOT NULL,
+ "price" SMALLINT NOT NULL
+);
