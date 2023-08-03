@@ -22,7 +22,7 @@ export const isMovieNameDuplicated = async (
     const movie = queryResult.rows[0];
     if (movie) {
         return res.status(409).json({
-            "message": "Movie name already registered."
+            "message": "Movie name already exists!"
         });
     } else {
         return next();
